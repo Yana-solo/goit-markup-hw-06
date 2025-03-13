@@ -199,9 +199,7 @@ button {
 /* #region mobile menu */
 
 .mobile-menu-container {
-  padding-top: 72px;
   position: relative;
-  padding-bottom: 40px;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -984,6 +982,8 @@ button {
   display: block;
   min-width: 169px;
   height: 56px;
+  margin-right: auto;
+  margin-left: auto;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 500;
