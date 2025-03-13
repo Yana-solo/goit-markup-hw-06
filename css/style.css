@@ -51,7 +51,7 @@ button {
 }
 @media screen and (min-width: 768px) {
   .container {
-    min-width: 768px;
+    max-width: 768px;
     padding-left: 16px;
     padding-right: 16px;
   }
@@ -178,7 +178,7 @@ button {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1158px) {
   .header-logo {
     margin-right: 76px;
   }
@@ -203,6 +203,8 @@ button {
   display: flex;
   flex-direction: column;
   height: 100%;
+  padding-top: 72px;
+  padding-bottom: 40px;
 }
 .mobile-menu-close {
   position: absolute;
@@ -225,7 +227,7 @@ button {
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 72px 24px 40px 16px;
+  /* padding: 72px 24px 40px 16px; */
   background-color: #fff;
   z-index: 1000;
   opacity: 0;
@@ -255,6 +257,10 @@ button {
   stroke-width: 1px;
   stroke: #2e2f42;
 } */
+.mob-adress {
+  font-style: normal;
+  margin-bottom: 48px;
+}
 
 .mob-list {
   display: flex;
@@ -277,7 +283,7 @@ button {
 .add-list {
   display: flex;
   flex-direction: column;
-  padding-top: 168px;
+  margin-top: 168px;
   gap: 24px;
 }
 .mob-link {
@@ -304,10 +310,10 @@ button {
   height: 40px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.icons-list {
+/* .icons-list {
   padding-top: 48px;
   padding-bottom: 40px;
-}
+} */
 /* #endregion mobile menu */
 
 /* #region solutions */
@@ -361,7 +367,7 @@ button {
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1158px) {
   .solutions {
     max-width: 1440px;
     min-height: 600px;
@@ -374,7 +380,7 @@ button {
   }
 }
 
-@media screen and (min-width: 1024px) and (min-resolution: 192dpi) {
+@media screen and (min-width: 1158px) and (min-resolution: 192dpi) {
   .solutions {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -458,7 +464,7 @@ button {
   width: 100%;
 }
 
-.desk {
+.desc {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -469,18 +475,17 @@ button {
 @media screen and (min-width: 768px) {
   .list-desc {
     width: calc((100% - 24px) / 2);
-    padding-bottom: 72px;
   }
   .list {
     align-items: flex-start;
-    gap: 8px;
+    gap: 72px 24px;
   }
   .subtitle {
     text-align: left;
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1158px) {
   .strategy-section {
     padding: 120px 0;
   }
@@ -519,7 +524,7 @@ button {
 
 .headline {
   background-color: #f4f4fd;
-  padding: 96px 28px;
+  padding: 96px;
 }
 
 .h-caption {
@@ -537,6 +542,7 @@ button {
 .team-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 72px;
 }
 
@@ -613,12 +619,14 @@ button {
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1158px) {
   .headline {
     padding-top: 120px;
     padding-bottom: 120px;
   }
   .team-list {
+    display: flex;
+    flex-wrap: nowrap;
     gap: 24px;
   }
 }
@@ -649,10 +657,7 @@ button {
   row-gap: 48px;
 }
 .portfolio-list {
-  position: relative;
-  border: 1px solid #e7e9fc;
-  width: 360px;
-  height: 420px;
+  width: ((100% - 24px) / 2);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
@@ -684,12 +689,15 @@ button {
 }
 
 @media screen and (min-width: 768px) {
+  .portfolio-list {
+    width: calc((100% - 24px) / 2);
+  }
   .portfolio-item {
     gap: 24px;
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1158px) {
   .s-heading {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -712,6 +720,9 @@ button {
     line-height: 1.5;
     letter-spacing: 0.02em;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .portfolio-list {
+    width: calc((100% - 48px) / 3);
   }
   .portfolio-list:hover .overlay {
     opacity: 1;
@@ -739,6 +750,10 @@ button {
   display: block;
   align-items: center;
 }
+.logocontainer {
+  text-align: center;
+  margin-bottom: 72px;
+}
 .logo-f {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -761,6 +776,11 @@ button {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   max-width: 288px;
+  text-align: left;
+}
+.social-footer {
+  text-align: center;
+  margin-bottom: 72px;
 }
 .footer-text {
   font-weight: 500;
@@ -769,6 +789,9 @@ button {
   letter-spacing: 0.02em;
   color: #ffffff;
   margin-bottom: 16px;
+}
+.subscribe {
+  text-align: center;
 }
 .footer-list {
   display: flex;
@@ -785,10 +808,12 @@ button {
 }
 .form-sub {
   display: block;
-  gap: 24px;
+}
+.label-sub {
+  margin-right: 24px;
 }
 .sub-input {
-  width: 264px;
+  width: 288px;
   height: 40px;
   border: 1px solid #ffffff;
   background-color: transparent;
@@ -817,6 +842,9 @@ button {
   background-color: #4d5ae5;
   border: none;
   border-radius: 4px;
+  margin-top: 16px;
+  margin-left: auto;
+  margin-right: auto;
   gap: 16px;
 }
 .sub-icon {
@@ -833,6 +861,10 @@ button {
   }
   .footer-block {
     display: flex;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+    align-items: flex-start;
+    width: 584px;
   }
   .p-footer {
     max-width: 264px;
@@ -840,21 +872,29 @@ button {
   .form-sub {
     display: flex;
   }
+  .sub-text {
+    text-align: left;
+  }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1158px) {
   .footer {
     padding-top: 100px;
     padding-bottom: 100px;
+    margin-left: 156px;
+  }
+  .p-footer {
+    max-width: 264px;
   }
   .logocontainer {
     margin-right: 120px;
   }
   .footer-block {
     display: flex;
-  }
-  .p-footer {
-    max-width: 264px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: unset;
   }
   .fot-icon:hover,
   .fot-icon:focus {
@@ -1072,7 +1112,7 @@ button {
     width: 360px;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1158px) {
   .modal {
     width: 408px;
     min-height: 584px;
